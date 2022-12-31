@@ -4,7 +4,7 @@ import pyxel
 
 class App():
 	def __init__(self):
-		pyxel.init(128, 64)
+		pyxel.init(128, 64, title="Countdown")
 		self.t = 0
 		pyxel.run(self.update, self.draw)
 	def update(self):
