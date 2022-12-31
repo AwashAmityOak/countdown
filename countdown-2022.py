@@ -10,7 +10,6 @@ class App():
 	def update(self):
 		self.t = datetime.datetime(year=2023, month=1, day=1).timestamp() - \
 			datetime.datetime.now().timestamp()
-		self.t = -1
 		self.string = str(int(self.t)) if 0.0 <= self.t else "Happy New Year!"
 	def draw(self):
 		pyxel.cls(0)
